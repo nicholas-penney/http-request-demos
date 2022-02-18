@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>HTTP Requests</title>
+
+    <!-- Meta -->
+    <meta name="description" content="HTTP Requests">
+    <meta name="author" content="Nicholas Penney">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            width: 50%;
+            margin: 0 auto;
+            background-color: #eee;
+            color: #222;
+        }
+
+        footer {
+            color: #777;
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        button {
+            background-color: white;
+            cursor: pointer;
+        }
+
+        body > h1 {
+            text-align: center;
+        }
+
+        div > h1 {
+            padding-left: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>HTTP Requests</h1>
+
+    <div>
+        <h1>XML HTTP Request:</h1>
+        <p>Native</p>
+        <button onclick="xhrData1()">XHR Data 1</button>
+        <p id="output-xhr1">XHR Output 1.</p>
+    </div>
+
+    <hr />
+
+    <div>
+        <h1>Fetch:</h1>
+        <p>Native</p>
+        <button onclick="fetchData1()">Fetch Data 1</button>
+        <button onclick="fetchData2()">Fetch Data 2</button>
+        <p id="output-fetch1">Fetch Output 1.</p>
+        <p id="output-fetch2">Fetch Output 2.</p>
+    </div>
+
+    <hr />
+
+    <div>
+        <h1>Axios:</h1>
+        <p>(lib: 14 kb)</p>
+        <button onclick="axiosData1()">Axios Data 1</button>
+        <button onclick="axiosData2()">Axios Data 2</button>
+        <p id="output-axios1">Axios Output 1.</p>
+        <p id="output-axios2">Axios Output 2.</p>
+    </div>
+
+    <hr />
+
+    <div>
+        <h1>AJAX:</h1>
+        <p>(lib: 88 kb)</p>
+        <button onclick="ajaxData1()">AJAX Data 1</button>
+        <p id="output-ajax1">AJAX Output 1.</p>
+    </div>
+
+    <hr />
+
+    <!-- Footer -->
+    <footer>2020 Penney Software &copy;</footer>
+
+    <!-- jQuery -->
+    <script src="vendors/jquery.min.js" type="text/javascript"></script>
+    <!-- script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script -->
+
+    <!-- Axios -->
+    <script src="vendors/axios.min.js"></script>
+    <!-- script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script -->
+
+    <!-- Custom JS -->
+    <script src="requests/ExampleFetch.js" type="text/javascript"></script>
+    <script src="requests/ExampleAxios.js" type="text/javascript"></script>
+    <script src="requests/ExampleAJAX.js" type="text/javascript"></script>
+    <script src="requests/ExampleXHR.js" type="text/javascript"></script>
+    <script src="util/spam.js" type="text/javascript"></script>
+
+</body>
+
+</html>
